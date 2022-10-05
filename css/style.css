@@ -9,6 +9,7 @@
   --button-bgc-portfolio: #EEEEEE;
   --hero-button-active: #188CE8;
   --heder-border: #ECECEC;
+  --accent-background-color:#F5F4FA;
 }
 
 /* основной цвет текста #757575 */
@@ -21,9 +22,7 @@
   box-sizing: border-box;
 }
 
-ul,
 a,
-address,
 h1,
 h2,
 h3,
@@ -41,6 +40,29 @@ body {
   padding: 0px;
   box-sizing: inherit;
 }
+img{
+  display:block;
+  max-width: 100%;
+  height: auto;
+}
+address{
+  font-style:normal;
+}
+button{
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 body {
   background-color: #FFFFFF;
@@ -48,14 +70,6 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: auto;
-
 }
 
 .visually-hidden {
@@ -69,11 +83,6 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* --------Logo-------- */
@@ -100,12 +109,14 @@ body {
 }
 
 /* -------Site nav------- */
-
+header{
+border-bottom: 1px solid #ECECEC;
+}
 .site-nav,
-.nav-vrap {
+.nav-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
 }
 
 .site-nav-li:not(:last-child),
@@ -153,11 +164,13 @@ body {
 .hero {
   background-color: var(--bcg-color-accent);
   text-align: center;
-  padding: 0px;
+  padding: 200px 0px;
 }
 
 .section-title-hero {
-  padding-top: 200px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -169,20 +182,17 @@ body {
 }
 
 .hero-button {
-  margin-bottom: 200px;
   padding: 10px 32px;
   background: var(--accent-text-color);
   color: var(--accent-praimery-white-color);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   border: 0px;
   min-width: 216px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30/16);
-  cursor: pointer;
 }
 
 .hero-button:hover,
@@ -245,7 +255,7 @@ body {
 /* --------section-our-team------- */
 
 .section-our-team {
-  background-color: #F5F4FA;
+  background-color:var(--accent-background-color);
 }
 
 .section-title-team {
@@ -257,8 +267,12 @@ body {
   color: var(--title-text-color);
 }
 
+.team-wrap{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -266,6 +280,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.team-list-li{
+  background: #FFFFFF;
+  
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team {
@@ -281,7 +302,6 @@ body {
 }
 
 .team-p {
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: calc(19/16);
   text-align: center;
@@ -292,10 +312,10 @@ body {
 
 .footer {
   background-color: var(--bcg-color-accent);
+  padding: 60px 0;
 }
 
 .footer .logo {
-  padding-top: 60px;
   margin-bottom: 20px;
   color: var(--accent-praimery-white-color);
 }
@@ -304,7 +324,9 @@ body {
 .footer .logo:focus {
   color: var(--accent-text-color);
 }
-
+.footer-logo{
+  padding: 0px;
+}
 .address-link:hover {
   color: var(--accent-text-color);
 }
@@ -315,7 +337,6 @@ body {
 
 .address-list:last-child {
   margin-bottom: 0px;
-  padding-bottom: 60px;
 }
 
 .address-link {
@@ -357,7 +378,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  background-color: var(--button-bgc-portfolio);
+  background-color: var(--accent-background-color);
 }
 
 .portfolio-button-list:hover,
@@ -390,12 +411,15 @@ body {
 }
 
 .portfolio-card-link {
+  display: inline-block;
   color: inherit;
 }
-
+.portfolio-card-wrap{
+  padding: 20px 0;
+  padding-left: 24px;
+}
 .portfolio-card-h2 {
-  margin-left: 24px;
-  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36/18);
@@ -404,8 +428,6 @@ body {
 }
 
 .portfolio-card-p {
-  margin-left: 24px;
-  margin-bottom: 20px;
   font-size: 16px;
   line-height: calc(30/16);
   letter-spacing: 0.03em;

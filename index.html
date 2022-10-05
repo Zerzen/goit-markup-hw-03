@@ -14,43 +14,37 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>WebStudio</title>
   </head>
-  <body class="page">
+  <body>
     <header>
-      <div class="container">
+      <div class="container nav-wrap">
         <nav class="site-nav">
-          <div class="nav-vrap">
-            <a class="logo" href="/index.html"><span>Web</span>Studio</a>
-
-            <ul class="site-nav">
-              <li class="site-nav-li">
-                <a class="site-nav-link current" href="">Студія</a>
-              </li>
-              <li class="site-nav-li">
-                <a class="site-nav-link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="site-nav-li">
-                <a class="site-nav-link" href="#">Контакти</a>
-              </li>
-            </ul>
-          </div>
-          <ul class="cotnact-nav site-nav">
+          <a class="logo" href="/index.html"><span>Web</span>Studio</a>
+          <ul class="site-nav">
             <li class="site-nav-li">
-              <a class="cotnact-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="site-nav-link current" href="">Студія</a>
             </li>
             <li class="site-nav-li">
-              <a class="cotnact-nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="site-nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="site-nav-li">
+              <a class="site-nav-link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
+        <ul class="cotnact-nav site-nav">
+          <li class="site-nav-li">
+            <a class="cotnact-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="site-nav-li">
+            <a class="cotnact-nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <section class="section hero">
         <div class="container">
-          <h1 class="section-title-hero">
-            Ефективні рішення для <br />
-            вашого бізнесу
-          </h1>
+          <h1 class="section-title-hero">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button" type="button">Замовити послугу</button>
         </div>
       </section>
@@ -101,29 +95,37 @@
           </ul>
         </div>
       </section>
-      <section class="section our-team">
+      <section class="section section-our-team">
         <div class="container">
           <h2 class="section-title-team">Наша команда</h2>
           <ul class="team">
-            <li>
+            <li class="team-list-li">
               <img src="./images/team2.jpg" alt="Чоловік в окулярах та сорочці" width="270" />
-              <h3 class="team-title">Ігор Дем'яненко</h3>
-              <p class="team-p" lang="en">Product Designer</p>
+              <div class="team-wrap">
+                <h3 class="team-title">Ігор Дем'яненко</h3>
+                <p class="team-p" lang="en">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-li">
               <img src="./images/team1.jpg" alt="жінка в окулярах та костюмі" width="270" />
-              <h3 class="team-title">Ольга Рєпіна</h3>
-              <p class="team-p" lang="en">Frontend Developer</p>
+              <div class="team-wrap">
+                <h3 class="team-title">Ольга Рєпіна</h3>
+                <p class="team-p" lang="en">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-li">
               <img src="./images/team3.jpg" alt="чоловік в сорочці" width="270" />
-              <h3 class="team-title">Микола Тарасов</h3>
-              <p class="team-p" lang="en">Marketing</p>
+              <div class="team-wrap">
+                <h3 class="team-title">Микола Тарасов</h3>
+                <p class="team-p" lang="en">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-li">
               <img src="./images/team4.jpg" alt=" чоловік в футболці" width="270" />
-              <h3 class="team-title">Михайло Єрмаков</h3>
-              <p class="team-p" lang="en">UI Designer</p>
+              <div class="team-wrap">
+                <h3 class="team-title">Михайло Єрмаков</h3>
+                <p class="team-p" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -131,7 +133,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+        <a class="logo footer-logo" href="./index.html"><span>Web</span>Studio</a>
         <address>
           <ul class="address">
             <li class="address-list">
